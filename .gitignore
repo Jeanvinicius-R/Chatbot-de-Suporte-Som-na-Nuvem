@@ -2,13 +2,15 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.log
 
 .env
 .venv
+venv/
 
 models/
-
-*.log
+.cache/
+.pytest_cache/
 
 .DS_Store
 Thumbs.db
