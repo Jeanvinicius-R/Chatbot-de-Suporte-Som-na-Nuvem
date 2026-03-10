@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - informar_problema
+  - pedir_humano
+  - despedida
+  - affirm
+  - deny
+  - nlu_fallback
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Sou o suporte virtual da Som na Nuvem. Em que posso ajudar?"
+
+  utter_perguntar_problema:
+    - text: "Me diga qual é o seu problema. Ex.: acesso à conta, mudar plano, app não funciona ou pagamento."
+
+  utter_despedida:
+    - text: "Tudo bem! Se precisar, estou por aqui."
+
+  utter_handoff:
+    - text: "Vou encaminhar você para um atendente humano."
+
+  utter_nao_entendi:
+    - text: "Não entendi muito bem. Você pode descrever seu problema com mais detalhes?"
+
+actions:
+  - action_fornecer_suporte

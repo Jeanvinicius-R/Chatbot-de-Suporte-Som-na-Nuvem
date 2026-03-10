@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+- story: fluxo basico suporte
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - action: utter_perguntar_problema
+    - intent: informar_problema
+    - action: action_fornecer_suporte
+
+- story: usuario pede humano
+  steps:
+    - intent: informar_problema
+    - action: action_fornecer_suporte
+    - intent: pedir_humano
+    - action: utter_handoff

@@ -1,0 +1,48 @@
+{
+  "acesso_conta": {
+    "solucao": [
+      "Verifique se o e-mail e a senha foram digitados corretamente.",
+      "Use a opção 'Esqueci minha senha' para redefinir o acesso.",
+      "Confira se sua assinatura está ativa.",
+      "Se o erro continuar, limpe o cache do aplicativo e tente novamente."
+    ],
+    "artigo": "https://ajuda.somnanuvem.com/acesso-conta",
+    "encaminhar_humano": false
+  },
+  "mudar_plano": {
+    "solucao": [
+      "Acesse o menu 'Minha Conta'.",
+      "Clique em 'Assinatura' ou 'Plano'.",
+      "Escolha o novo plano desejado.",
+      "Confirme a alteração e aguarde o e-mail de confirmação."
+    ],
+    "artigo": "https://ajuda.somnanuvem.com/planos",
+    "encaminhar_humano": false
+  },
+  "app_nao_funciona": {
+    "solucao": [
+      "Feche e abra o aplicativo novamente.",
+      "Verifique sua conexão com a internet.",
+      "Atualize o aplicativo para a versão mais recente.",
+      "Reinicie o celular ou computador."
+    ],
+    "artigo": "https://ajuda.somnanuvem.com/app",
+    "encaminhar_humano": false
+  },
+  "pagamento": {
+    "solucao": [
+      "Verifique se o cartão cadastrado ainda está válido.",
+      "Confirme se há limite disponível.",
+      "Tente atualizar a forma de pagamento em 'Minha Conta'."
+    ],
+    "artigo": "https://ajuda.somnanuvem.com/pagamento",
+    "encaminhar_humano": false
+  },
+  "problema_complexo": {
+    "solucao": [
+      "Não encontrei uma solução automática segura para esse caso."
+    ],
+    "artigo": "https://ajuda.somnanuvem.com/fale-conosco",
+    "encaminhar_humano": true
+  }
+}

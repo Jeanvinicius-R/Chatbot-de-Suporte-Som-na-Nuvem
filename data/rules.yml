@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+- rule: responder saudacao
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - action: utter_perguntar_problema
+
+- rule: fornecer suporte quando usuário informar problema
+  steps:
+    - intent: informar_problema
+    - action: action_fornecer_suporte
+
+- rule: encaminhar para humano quando solicitado
+  steps:
+    - intent: pedir_humano
+    - action: utter_handoff
+
+- rule: despedida
+  steps:
+    - intent: despedida
+    - action: utter_despedida
+
+- rule: fallback
+  steps:
+    - intent: nlu_fallback
+    - action: utter_nao_entendi

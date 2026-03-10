@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Som na Nuvem</title>
+  <style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:40px;
+}
+
+h2{
+    color:#333;
+}
+</style>
+</head>
+<body>
+  <h2>Chatbot Som na Nuvem</h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"></script>
+  <script>
+    window.WebChat.default(
+      {
+        initPayload: "/saudacao",
+        customData: { language: "pt-BR" },
+        socketUrl: "http://127.0.0.1:5005",
+        socketPath: "/socket.io/",
+        title: "Suporte Som na Nuvem",
+        subtitle: "Assistente virtual",
+        showMessageDate: true,
+        embedded: false
+      },
+      null
+    );
+  </script>
+</body>
+</html>

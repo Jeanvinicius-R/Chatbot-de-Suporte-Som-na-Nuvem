@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - e aí
+
+- intent: despedida
+  examples: |
+    - tchau
+    - até mais
+    - valeu
+    - obrigado, tchau
+    - encerra
+
+- intent: pedir_humano
+  examples: |
+    - quero falar com um atendente
+    - me passa para um humano
+    - preciso de suporte humano
+    - quero falar com uma pessoa
+    - me encaminha para o atendimento
+
+- intent: informar_problema
+  examples: |
+    - não consigo acessar minha [conta](problema)
+    - não entro na minha [conta](problema)
+    - estou com problema de [acesso_conta](problema)
+    - esqueci minha senha e não consigo entrar [acesso_conta](problema)
+    - quero [mudar_plano](problema)
+    - quero trocar de [plano](problema)
+    - preciso alterar meu [mudar_plano](problema)
+    - o [app_nao_funciona](problema)
+    - o aplicativo travou [app_nao_funciona](problema)
+    - o app não abre [app_nao_funciona](problema)
+    - meu aplicativo não funciona [app_nao_funciona](problema)
+    - estou com problema de [pagamento](problema)
+    - meu cartão falhou [pagamento](problema)
+    - não consegui pagar a assinatura [pagamento](problema)
+    - estou com um [problema_complexo](problema)
+    - meu caso é mais complicado [problema_complexo](problema)
+
+- synonym: acesso_conta
+  examples: |
+    - conta
+    - acesso
+    - login
+    - entrar
+    - senha
+
+- synonym: mudar_plano
+  examples: |
+    - plano
+    - trocar plano
+    - alterar plano
+    - upgrade
+    - downgrade
+
+- synonym: app_nao_funciona
+  examples: |
+    - app
+    - aplicativo
+    - app travando
+    - aplicativo travando
+    - não abre
+
+- synonym: pagamento
+  examples: |
+    - cobrança
+    - cartão
+    - pagar
+    - assinatura
+
+- synonym: problema_complexo
+  examples: |
+    - problema complicado
+    - erro estranho
+    - bug grave
